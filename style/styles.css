@@ -101,6 +101,10 @@ a:visited {
   background-color: #28464b;
 }
 
+.footer-text {
+  font-weight: 600;
+}
+
 a:link {
   text-decoration: none;
 }
