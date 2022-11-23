@@ -151,6 +151,10 @@ a:active {
   color: white;
 }
 
+.btn-links {
+  color: white;
+}
+
 .text-btn-container:hover {
   padding: 15px;
   border-radius: 8px;
