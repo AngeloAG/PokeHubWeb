@@ -384,8 +384,12 @@ h3 {
 #home-second-section-message {
   grid-column: 2 / 4;
   grid-row-start: 2;
-  padding-right: 80px;
-  padding-left: 35px;
+  padding-right: 0px;
+  padding-left: 10px;
+}
+
+#home-second-section-message p {
+  font-size: large;
 }
 
 #home-second-section-image-container {
