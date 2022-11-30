@@ -1,49 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/styles.css" />
-    <title>Poke' Prof Forum</title>
-  </head>
-  <body>
-    <div id="main">
-      <header>
-        <div id="logo-container" class="header-cell">
-          <div id="inner-logo-container">
-            <img
-              id="logo-img"
-              src="images/logo.png"
-              alt="Pokemon Professor Forum Logo"
-            />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style/styles.css" />
+  <title>Poke' Prof Forum</title>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo-container" class="header-cell">
+        <div id="inner-logo-container">
+          <img id="logo-img" src="images/logo.png" alt="Pokemon Professor Forum Logo" />
+        </div>
+      </div>
+      <div id="header-home-cell" class="header-cell">
+        <a href="index.html">
+          <div class="nav-container">
+            <span class="nav-text">Home</span>
           </div>
-        </div>
-        <div id="header-home-cell" class="header-cell">
-          <a href="index.html">
-            <div class="nav-container">
-              <span class="nav-text">Home</span>
-            </div>
-          </a>
-        </div>
-        <div id="header-guides-cell" class="header-cell">
-          <a href="guides.html">
-            <div class="nav-container">
-              <span class="nav-text">Guides</span>
-            </div>
-          </a>
-        </div>
-        <div id="header-formats-cell" class="header-cell">
-          <a href="formats.html">
-            <div class="nav-container">
-              <span class="nav-text">Formats</span>
-            </div>
-          </a>
-        </div>
-        <div id="horizontal-ribbon"></div>
-        <div id="horizontal-ribbon-inner"></div>
-      </header>
-      <div id="guides-content-container">
+        </a>
+      </div>
+      <div id="header-guides-cell" class="header-cell">
+        <a href="guides.html">
+          <div class="nav-container">
+            <span class="nav-text">Guides</span>
+          </div>
+        </a>
+      </div>
+      <div id="header-formats-cell" class="header-cell">
+        <a href="formats.html">
+          <div class="nav-container">
+            <span class="nav-text">Formats</span>
+          </div>
+        </a>
+      </div>
+      <div id="horizontal-ribbon"></div>
+      <div id="horizontal-ribbon-inner"></div>
+    </header>
+    <div id="guides-content-container">
+      <div class="guides-first-container">
         <h2>Learn how to build your own deck!</h2>
         <div id="guides-content-message1">
           <p>
@@ -55,6 +54,8 @@
             be achieved are only limited to your imagination.
           </p>
         </div>
+      </div>
+      <div class="guides-second-container">
         <div id="guides-content-message2">
           <p>
             The first thing you must consider is the format you want your deck
@@ -70,10 +71,10 @@
         </div>
         <div id="guides-content-twocards-container">
           <h3>This are pokemon that poison</h3>
-          <div class="guides-content-twocards-container-imgs">
+          <div id="guides-sneasel-img-cont" class="guides-content-twocards-container-imgs">
             <img src="images/HisuianSneasel.webp" alt="Sneasel" />
           </div>
-          <div class="guides-content-twocards-container-imgs">
+          <div id="guides-overquil-img-cont" class="guides-content-twocards-container-imgs">
             <img src="images/Overquil.png" alt="Overquil" />
           </div>
         </div>
@@ -102,70 +103,72 @@
           </div>
         </div>
         <div id="guides-content-mini-images-container">
-          <div id="guides-content-mini-images-1">
-            <img src="images/burned.jpg" alt="Burned" />
+          <div id="guides-content-mini-images-1" class="guides-content-mini-images-containers">
+            <img src="images/burned.png" alt="Burned" />
           </div>
-          <div id="guides-content-mini-images-2">
-            <img src="images/poisoned.jpg" alt="Poisoned" />
-          </div>
-        </div>
-        <div id="guides-content-message4-container">
-          <h3>And last but not least</h3>
-          <div>
-            <p>
-              Well, the deck needs to have 60 cards. What now? Now you need to
-              create a structure for your deck. Now we have to find a motor that
-              will move your deck throughout the game. Some pokemon have
-              interesting abilities like “Discard a card and if you do draw 2
-              cards” or “When you evolve this pokemon look for a trainer in your
-              deck”. That's powerful, and that will allow you to travel through
-              your deck and find what you need. And what about the trainers?
-              That's a good question, you cannot only rely on pokemon's
-              abilities, it would be too slow, that's where trainers come in
-              handy. Look for trainers that allow you to find in your deck what
-              you need to power your deck. For example, if your main pokemon is
-              a dark type pokemon, find trainers that help you with that kind of
-              pokemon. Look for trainers that allow you to recover pokemon that
-              were defeated in battle and make your library of trainers for your
-              deck. Energies are a vital and tricky part. Most pokemon movements
-              require energy to be performed, and that's the guide here, look at
-              the pokemon you have, find the movements that you will actually
-              use in battle (you probably would not need all movements your
-              pokemon are capable of), and sum them up, now you have an
-              approximate of the amount of energy you will need to power your
-              deck.
-            </p>
+          <div id="guides-content-mini-images-2" class="guides-content-mini-images-containers">
+            <img src="images/poisoned.png" alt="Poisoned" />
           </div>
         </div>
       </div>
-      <footer>
-        <div class="footer-rights-container">
+      <div id="guides-content-message4-container">
+        <h3>And last but not least</h3>
+        <div>
           <p>
-            All rights reserved by The Pokemon Company, Nintendo, and Game
-            Freak.
+            Well, the deck needs to have 60 cards. What now? Now you need to
+            create a structure for your deck. Now we have to find a motor that
+            will move your deck throughout the game. Some pokemon have
+            interesting abilities like “Discard a card and if you do draw 2
+            cards” or “When you evolve this pokemon look for a trainer in your
+            deck”. That's powerful, and that will allow you to travel through
+            your deck and find what you need. And what about the trainers?
+            That's a good question, you cannot only rely on pokemon's
+            abilities, it would be too slow, that's where trainers come in
+            handy. Look for trainers that allow you to find in your deck what
+            you need to power your deck. For example, if your main pokemon is
+            a dark type pokemon, find trainers that help you with that kind of
+            pokemon. Look for trainers that allow you to recover pokemon that
+            were defeated in battle and make your library of trainers for your
+            deck. Energies are a vital and tricky part. Most pokemon movements
+            require energy to be performed, and that's the guide here, look at
+            the pokemon you have, find the movements that you will actually
+            use in battle (you probably would not need all movements your
+            pokemon are capable of), and sum them up, now you have an
+            approximate of the amount of energy you will need to power your
+            deck.
           </p>
         </div>
-        <div class="footer-pokesite-container">
-          <p>
-            Look at the official Pokemon site for more information about how to
-            get products.
-          </p>
-        </div>
-        <div class="footer-siteplan-container">
-          <a href="https://angeloag.github.io/WDD130/personalplan/index.html"
-            ><p>Visit this site plan</p></a
-          >
-        </div>
-        <div class="footer-facebook-container footer-img-containers">
-          <img src="images/facebook.png" alt="Facebook" />
-        </div>
-        <div class="footer-instagram-container footer-img-containers">
-          <img src="images/instagram.png" alt="Instagram" />
-        </div>
-        <div class="footer-twitter-container footer-img-containers">
-          <img src="images/twitter.png" alt="Twitter" />
-        </div>
-      </footer>
+      </div>
     </div>
-  </body>
+    <footer>
+      <div class="footer-rights-container">
+        <p>
+          All rights reserved by The Pokemon Company, Nintendo, and Game
+          Freak.
+        </p>
+      </div>
+      <div class="footer-pokesite-container">
+        <p>
+          Look at the official Pokemon site for more information about how to
+          get products.
+        </p>
+      </div>
+      <div class="footer-siteplan-container">
+        <a href="https://angeloag.github.io/WDD130/personalplan/index.html">
+          <p>Visit this site plan</p>
+        </a>
+      </div>
+      <div class="footer-facebook-container footer-img-containers">
+        <img src="images/facebook.png" alt="Facebook" />
+      </div>
+      <div class="footer-instagram-container footer-img-containers">
+        <img src="images/instagram.png" alt="Instagram" />
+      </div>
+      <div class="footer-twitter-container footer-img-containers">
+        <img src="images/twitter.png" alt="Twitter" />
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
