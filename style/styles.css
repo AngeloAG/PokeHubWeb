@@ -570,3 +570,140 @@ h3 {
   color:#28464b;
   margin-left: 20px;
 }
+
+/*Formats page*/
+
+#formats-content-container {
+  display: grid;
+  grid-template-columns: 5% repeat(20, 1fr) 5%;
+}
+
+#formats-content-container-header {
+  grid-column: 2 / 22;
+  grid-row-start: 1;
+  text-align: center;
+}
+
+#formats-first-msg-container {
+  grid-column: 2 / 12;
+  grid-row-start: 2;
+  background-color: #326771;
+  border: solid 10px #28464b;
+  color: white;
+}
+
+#formats-first-msg-container p{
+  margin: 0
+}
+
+.formats-left-container {
+  grid-column: 3 / 12;
+  z-index: 1;
+}
+
+.formats-imgs {
+  width: 100%;
+  height: auto;
+}
+
+.formats-oakevee-container {
+  grid-column: 13 / 22;
+  grid-row-start: 2;
+  padding: 10px;
+  background-color: #28464b;
+  border: solid 10px #326771;
+}
+
+.formats-right-container {
+  grid-column: 13 / 21;
+  z-index: 1;
+}
+
+.formats-mid-header-container {
+  grid-column: 1 / 23;
+  grid-row-start: 3;
+  text-align: center;
+  background-color: rgba(147, 22, 33, 0.97);
+  border-top: solid 5px #7a121c;
+  border-bottom: solid 5px #7a121c;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.formats-mid-header-container h2{
+  color: white;
+}
+
+.minioak-left {
+  grid-column: 2 / 4;
+}
+
+.minioak-right {
+  grid-column: 20 / 22;
+}
+
+.formats-oak-miniature-container {
+  width: 50px;
+  height: 100px;
+  background-color: #28464b;
+  border: solid 10px #326771;
+  padding: 10px;
+  z-index: 2;
+}
+
+.first-oak {
+  grid-row: 4;
+}
+
+#formats-second-msg-container {
+  grid-row-start: 4;
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: solid 10px #326771;
+  padding-left: 20px;
+}
+
+#formats-second-img-container {
+  grid-row-start: 4;
+  margin-top: 50px;
+  align-self: center;
+}
+
+.second-oak {
+  grid-row-start: 5;
+}
+
+#formats-third-msg-container{
+  grid-row-start: 5;
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: solid 10px #326771;
+  padding-right: 20px;
+}
+
+#formats-third-img-container {
+  grid-row-start: 5;
+  margin-top: 50px;
+  align-self: center;
+}
+
+.third-oak { 
+  grid-row-start: 6;
+}
+
+#formats-fourth-msg-container {
+  grid-row-start: 6;
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: solid 10px #326771;
+  padding-left: 20px;
+}
+
+#formats-fourth-img-container {
+  grid-row-start: 6;
+  margin-top: 50px;
+  align-self: center;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
