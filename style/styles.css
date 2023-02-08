@@ -209,6 +209,10 @@ a:active {
   grid-column: 4 / 5;
 }
 
+#header-search-cell {
+  grid-column: 5 / 6;
+}
+
 #horizontal-ribbon {
   background-color: #28464b;
   grid-column: 1 / 7;
@@ -707,3 +711,116 @@ h3 {
   margin-left: auto;
   margin-right: auto;
 }
+
+#searchbox-container {
+  width: 60%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#search-icon {
+  width: 46px;
+  height: auto;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#searchbox-form {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+}
+
+#search-icon {
+  margin-right: 0;
+  margin-left: auto;
+  display: block;
+}
+
+#search-btn {
+  padding: 10px;
+  border-radius: 8px;
+  margin-left: 5px;
+  background-color: #326771;
+  color: white;
+}
+
+#search-results-container {
+  width: 100%;
+  height: auto;
+}
+
+#search-results {
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: none;
+}
+
+#search-not-found-container {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+#search-not-found-content {
+  width: 60%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #28464b;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#search-not-found-header {
+  color: white;
+}
+
+#search-not-found-msg {
+  margin-left: 50px;
+  margin-right: 50px;
+  color: white;
+}
+
+#searching-container {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  display: none;
+}
+
+#searching-img-container {
+  width: 50%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#searching-icon {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.search-card-img {
+  width: 300px;
+  height: auto;
+  margin: 20px;
+}
+

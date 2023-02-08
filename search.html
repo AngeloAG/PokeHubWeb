@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style/styles.css" />
+  <script src="scripts/search.js" defer></script>
+  <title>Poke' Prof Forum</title>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo-container" class="header-cell">
+        <div id="inner-logo-container">
+          <img id="logo-img" src="images/logo.png" alt="Pokemon Professor Forum Logo" />
+        </div>
+      </div>
+      <div id="header-home-cell" class="header-cell">
+        <a href="index.html">
+          <div class="nav-container">
+            <span class="nav-text">Home</span>
+          </div>
+        </a>
+      </div>
+      <div id="header-guides-cell" class="header-cell">
+        <a href="guides.html">
+          <div class="nav-container">
+            <span class="nav-text">Guides</span>
+          </div>
+        </a>
+      </div>
+      <div id="header-formats-cell" class="header-cell">
+        <a href="formats.html">
+          <div class="nav-container">
+            <span class="nav-text">Formats</span>
+          </div>
+        </a>
+      </div>
+      <div id="header-search-cell" class="header-cell">
+        <a href="search.html">
+          <div class="nav-container">
+            <span class="nav-text">Search</span>
+          </div>
+        </a>
+      </div>
+      <div id="horizontal-ribbon"></div>
+      <div id="horizontal-ribbon-inner"></div>
+    </header>
+    <div id="search-main">
+      <div id="searchbox-container">
+        <form id="searchbox-form">
+          <div id="searchbox-icon">
+            <img id="search-icon" src="images/search.svg" alt="search">
+          </div>
+          <div id="searchbox-textfield">
+            <input type="text" id="search-term" placeholder="Search for a pokemon card" name="search-term" size="30">
+          </div>
+          <div id="searchbox-submit-btn">
+            <button id="search-btn" type="button" onclick="search()">Search</button>
+          </div>
+        </form>
+      </div>
+      <div id="search-results-container">
+        <div id="search-results"> </div>
+        <div id="searching-container">
+          <div id="searching-img-container">
+            <img id="searching-icon" src="images/loading.svg" alt="searching">
+          </div>
+        </div>
+        <div id="search-not-found-container">
+          <div id="search-not-found-content">
+            <h2 id="search-not-found-header">Sorry! We couldn't find your Pokemon</h2>
+            <img id="search-not-found-img" src="images/pikachu-face.png" alt="Confused Pikcahu">
+            <p id="search-not-found-msg">Try changing your search term to something more specific. Make sure the name of
+              the
+              card is close or
+              matches
+              the one you are looking for. </p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-rights-container">
+          <p class="footer-text">
+            All rights reserved by The Pokemon Company, Nintendo, and Game
+            Freak.
+          </p>
+        </div>
+        <div class="footer-pokesite-container">
+          <p class="footer-text">
+            Look at the official Pokemon site for more information about how to
+            get products.
+          </p>
+        </div>
+        <div class="footer-siteplan-container">
+          <a href="https://angeloag.github.io/WDD130/personalplan/index.html">
+            <p class="footer-text">Visit this site plan</p>
+          </a>
+        </div>
+        <div class="footer-facebook-container footer-img-containers">
+          <img src="images/facebook.png" alt="Facebook" />
+        </div>
+        <div class="footer-instagram-container footer-img-containers">
+          <img src="images/instagram.png" alt="Instagram" />
+        </div>
+        <div class="footer-twitter-container footer-img-containers">
+          <img src="images/twitter.png" alt="Twitter" />
+        </div>
+      </footer>
+    </div>
+</body>
+
+</html>
