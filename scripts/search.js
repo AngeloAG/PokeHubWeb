@@ -42,7 +42,7 @@ async function getCardInfo(searchTerm) {
 function populateResults(results) {
   let searchResultsElement = document.getElementById("search-results");
   results.forEach((result) => {
-    searchResultsElement.innerHTML += `<img class="search-card-img" src=${result.images.small}>`;
+    searchResultsElement.innerHTML += `<img class="search-card-img" src=${result.images.small} alt=${result.name}>`;
   });
 }
 
