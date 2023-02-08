@@ -14,7 +14,7 @@ function search() {
 
 async function getCardInfo(searchTerm) {
   let url = "https://api.pokemontcg.io/v2/cards";
-  url += `?q=name:${searchTerm}*&pageSize=18`; //The search is passed as a param in the url
+  url += `?q=name:${searchTerm}*&pageSize=24`; //The search is passed as a param in the url
   let response = await fetch(url);
   if (response.ok) {
     hideElementById("search-not-found-container");
