@@ -20,7 +20,7 @@ async function getCardInfo(searchTerm) {
     hideElementById("search-not-found-container");
 
     let jsonResponse = await response.json();
-    //console.log(jsonResponse);
+    console.log(jsonResponse);
     hideElementById("searching-container");
     hideElementById("search-results");
 
@@ -42,7 +42,13 @@ async function getCardInfo(searchTerm) {
 function populateResults(results) {
   let searchResultsElement = document.getElementById("search-results");
   results.forEach((result) => {
-    searchResultsElement.innerHTML += `<img class="search-card-img" src=${result.images.small} alt=${result.name}>`;
+    searchResultsElement.innerHTML += `<div class="card-container"><img class="search-card-img" src=${
+      result.images.small
+    } alt=${result.name}><h2 class="search-prices">Market Avg Price $${
+      result.cardmarket.prices.averageSellPrice
+        ? result.cardmarket.prices.averageSellPrice
+        : "Uknown"
+    }</h2></div>`;
   });
 }
 
