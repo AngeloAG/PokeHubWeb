@@ -3,6 +3,7 @@
 var results_list = [];
 
 function search() {
+  //This prepares the html for a search and starts the search
   showElementByIdAsBlock("searching-container");
 
   let searchTerm = document.querySelector("#search-term").value;
@@ -13,6 +14,7 @@ function search() {
 }
 
 async function getCardInfo(searchTerm) {
+  //This gets the info of cards and handles the response, if good goes to populate the html
   let url = "https://api.pokemontcg.io/v2/cards";
   url += `?q=name:${searchTerm}*&pageSize=42`; //The search is passed as a param in the url
   let response = await fetch(url);
@@ -41,6 +43,7 @@ async function getCardInfo(searchTerm) {
 }
 
 function populateResults(results) {
+  //This works to update the html with the results
   let searchResultsElement = document.getElementById("search-results");
   results.forEach((result) => {
     let cardPrice;
@@ -54,6 +57,7 @@ function populateResults(results) {
 
   let cardImages = document.getElementsByClassName("search-card-img");
 
+  //We need the cards to be populated already in order to attach the event listener
   for (element of cardImages) {
     element.addEventListener("click", (event) => {
       focusImage(event.target.alt);
@@ -62,6 +66,7 @@ function populateResults(results) {
 }
 
 function orderByPrice(order) {
+  //this manipulates the global list of cards and orders them
   if (order == "Ascending") {
     results_list.sort((current, next) => {
       let currentPrice, nextPrice;
@@ -111,6 +116,7 @@ function orderByPrice(order) {
 }
 
 function filterByCardType(type) {
+  //This stores the filtered cards in a temporal list to avoid losing the global list
   let filtered_list = [];
   filtered_list = results_list.filter((card) => {
     try {
@@ -134,8 +140,11 @@ function showElementByIdAsBlock(id) {
 }
 
 function focusImage(cardId) {
+  //This one changes the html to show information about a single card
   let card = results_list.filter((card) => card.id == cardId)[0];
   console.log("Card: ", card);
+
+  //Not all cards have attacks, this handles this to only add them if the cards is a pokemon
   let attacksHTML = `<p class="select-card-info select-card-text">Attacks</p>`;
   try {
     card.attacks.forEach((attack) => {
@@ -171,6 +180,8 @@ function focusImage(cardId) {
           </div>
         </div>`;
 }
+
+//Event listeners
 
 document.querySelector("#orderby-price").addEventListener("change", (event) => {
   orderByPrice(event.target.value);
