@@ -833,3 +833,34 @@ input[type=text], select {
 .search-prices {
   margin-left: 10px;
 }
+
+#filters-container {
+  width: 100%;
+  height: auto;
+}
+
+#filters-contents {
+  width: 50%;
+  height: auto;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filter-item {
+  margin: 5px;
+}
+
+#select-result-container {
+  width: 60%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.select-card-text {
+  margin: 5px;
+  padding: 5px;
+}
