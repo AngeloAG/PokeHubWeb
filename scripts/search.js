@@ -192,3 +192,12 @@ document
   .addEventListener("change", (event) => {
     filterByCardType(event.target.value);
   });
+
+var searchBox = document.getElementById("search-term");
+
+searchBox.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("search-btn").click();
+  }
+});
